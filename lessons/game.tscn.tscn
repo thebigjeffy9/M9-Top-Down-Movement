@@ -19,13 +19,22 @@ position = Vector2(1132, 482)
 z_index = -1
 position = Vector2(1076, 433)
 
-[node name="Circuit" parent="." instance=ExtResource("4_geir3")]
-
 [node name="SimpleObstacle2" parent="." instance=ExtResource("2_v3uex")]
-position = Vector2(916, 686)
+position = Vector2(-54, -146)
 
 [node name="SimpleObstacle3" parent="." instance=ExtResource("2_v3uex")]
-position = Vector2(-1339, 44)
+position = Vector2(-1281, -77)
 
 [node name="SimpleObstacle4" parent="." instance=ExtResource("2_v3uex")]
-position = Vector2(895, -641)
+position = Vector2(-891, 755)
+
+[node name="SimpleObstacle5" parent="." instance=ExtResource("2_v3uex")]
+position = Vector2(900, 749)
+
+[node name="SimpleObstacle6" parent="." instance=ExtResource("2_v3uex")]
+position = Vector2(-154, -862)
+
+[node name="SimpleObstacle7" parent="." instance=ExtResource("2_v3uex")]
+position = Vector2(1274, 7)
+
+[node name="Circuit" parent="." instance=ExtResource("4_geir3")]
