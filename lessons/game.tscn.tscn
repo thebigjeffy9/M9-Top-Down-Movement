@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ccw8taa45g7ok"]
+[gd_scene load_steps=10 format=3 uid="uid://ccw8taa45g7ok"]
 
 [ext_resource type="Script" uid="uid://5nrf8ebgtofs" path="res://lessons/game.gd" id="1_5yt2l"]
 [ext_resource type="PackedScene" uid="uid://p75euy1gcr34" path="res://lessons/runner.tscn" id="1_dsdrx"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://nkympivbosco" path="res://lessons/Circuit.tscn" id="4_geir3"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_be7pi"]
 [ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="8_1aw6d"]
+[ext_resource type="PackedScene" uid="uid://dj6ye05dbiqpi" path="res://lessons/pause_screen.tscn" id="9_1aw6d"]
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -66,8 +67,9 @@ offset_bottom = 109.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("7_be7pi")
-text = "hhh"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("8_1aw6d")
 metadata/_custom_type_script = "uid://57e8080cpukf"
+
+[node name="PauseScreen" parent="." instance=ExtResource("9_1aw6d")]
