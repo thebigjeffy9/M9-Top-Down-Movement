@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="M09. Top Down Movement (Workbook)"
+run/main_scene="uid://ccw8taa45g7ok"
 config/features=PackedStringArray("4.5")
 run/max_fps=60
 config/icon="res://icon_top_down_movement.png"
