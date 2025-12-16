@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://budpgxkjtmw1f"]
+[gd_scene load_steps=15 format=3 uid="uid://budpgxkjtmw1f"]
 
 [ext_resource type="Script" uid="uid://cvovse0lvo8pp" path="res://lessons/bouncer.gd" id="1_o17vw"]
 [ext_resource type="Texture2D" uid="uid://dbcmxo51msi8m" path="res://assets/runner/shadow.png" id="2_41ggd"]
@@ -40,6 +40,9 @@ scale_max = 0.7
 scale_curve = SubResource("CurveTexture_pb15w")
 alpha_curve = SubResource("CurveTexture_d46nv")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_o17vw"]
+radius = 42.0119
+
 [node name="Bouncer" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_o17vw")
@@ -74,3 +77,10 @@ position = Vector2(-1, -19)
 emitting = false
 texture = ExtResource("5_wkdje")
 process_material = SubResource("ParticleProcessMaterial_28xeg")
+
+[node name="HitBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(-2, -23)
+shape = SubResource("CircleShape2D_o17vw")
